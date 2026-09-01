@@ -1,0 +1,16 @@
+ALGORITMA hitungDiskon
+DEKLARASI: 
+	totalBelanja, diskon, hargaAkhir: real
+ALGORITMA:
+	READ(totalBelanja)
+	IF(totalBelanja >= 100000) THEN
+	diskon <- 0.10 * totalBelanja
+
+	ELSE
+	diskon <- 0
+
+	ENDIF
+	
+	hargaAKhir <- totalBelanja - diskon 
+
+	WRITE("Total Akhr: ", hargaAkhir)
