@@ -21,7 +21,5 @@ public class sistemNilai {
         System.out.println("Nilai: " + nilai + " Status: " + status);
 
         input.close();
-    
-}
-
+    }
 }

@@ -2,7 +2,7 @@ package Pertemuan2;
 
 import java.util.Scanner;
 
-public class totalBelanja { //kenapa membuat notasi seperti itu
+public class totalBelanja { 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
     
@@ -11,8 +11,8 @@ public class totalBelanja { //kenapa membuat notasi seperti itu
         System.out.println("Masukkan harga total belanja: ");
         totalBelanja = input.nextDouble();  
 
-        if (totalBelanja > 100000) {
-            diskon = 0.10 * totalBelanja;
+        if (totalBelanja >= 100000) {
+            diskon = 0.10 * totalBelanja;   
         } else {
             diskon = 0;
         }
