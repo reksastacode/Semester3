@@ -1,3 +1,5 @@
+package Pertemuan4;
+
 import java.util.Scanner;
 public class cetakPolaSeigitiga {
     public static void main(String[] args) {
