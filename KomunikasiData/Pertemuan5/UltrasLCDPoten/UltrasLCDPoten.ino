@@ -36,7 +36,6 @@ lcd.print("Gyan");
 Serial.print("  OverAll Technical Gyan");
 delay(2000);
 lcd.clear();
-
 }
 
 void  loop()
@@ -53,36 +52,27 @@ void  loop()
   duration =  pulseIn(echoPin, HIGH);
   inches = microsecondsToInches(duration);
   cm =  microsecondsToCentimeters(duration);
-  
-//  Serial.print(inches);
-//  Serial.print("in,  ");
 
 Serial.print("Distance:");
   Serial.print(cm);
   Serial.print("cm");
   delay(100);
   Serial.println();
-lcd.setCursor(0,0);                                                 
-lcd.print("");
-delay(10);
-lcd.setCursor(0,1);
-lcd.print("Distance:");
-lcd.print(cm);
-lcd.print("cm");
-delay(100);
-//  mySerial.println(cm);
-//   mySerial.println("cm");
-//   mySerial.println();
-//   
-//  delay(100);
-}
+  lcd.setCursor(0,0);
+  lcd.print("");
+  delay(10);
+  lcd.setCursor(0,1);
+  lcd.print("Distance:");
+  lcd.print(cm);
+  lcd.print("cm");
+  delay(100);
+  }
 
 long microsecondsToInches(long microseconds)
 {
   return microseconds / 74 / 2;
 }
-
 long microsecondsToCentimeters(long microseconds)
 {
-   return microseconds / 29 / 2;
+  return microseconds / 29 / 2;
 }
