@@ -23,7 +23,6 @@ void loop() {
     Serial.println("Failed to read from DHT sensor!");
     return;
   }
-
   float hi = dht.computeHeatIndex(f, h);
 
   Serial.print("Humidity: ");
