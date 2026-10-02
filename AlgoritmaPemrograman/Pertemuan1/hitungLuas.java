@@ -1,4 +1,3 @@
-package Pertemuan1;
 public class hitungLuas {
     public static void main(String[] args) {
     double luas, PI;
