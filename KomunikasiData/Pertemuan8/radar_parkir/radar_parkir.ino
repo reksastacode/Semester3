@@ -5,8 +5,8 @@ const int PIN_SERVO  = 11;
 const int PIN_TRIG   = 9;
 const int PIN_ECHO   = 10;
 const int PIN_BUZZER = 12;
-const int PIN_LED1   = A1;   // LED peringatan (jarak menengah)
-const int PIN_LED2   = A0;  // LED bahaya (jarak sangat dekat)
+const int PIN_LED1   = A1;   
+const int PIN_LED2   = A0;  
 
 // LCD: RS, E, D4, D5, D6, D7
 LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
@@ -66,7 +66,6 @@ void atur_peringatan(int jarak) {
     noTone(PIN_BUZZER);
   }
 }
-
 void prosesSudut(int sudut) {
   servo.write(sudut);
   delay(JEDA_LANGKAH);
@@ -79,7 +78,6 @@ void prosesSudut(int sudut) {
   Serial.print(",");
   Serial.println(jarak);
 }
-
 void setup() {
   Serial.begin(9600);
 
