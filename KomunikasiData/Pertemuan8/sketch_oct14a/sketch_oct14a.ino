@@ -3,11 +3,11 @@ int ledPin[] = {2, 3, 4, 5, 6};
 int inByte = 0;
 
 void setup() {
- Serial.begin(9600);
- for (int i = 0; i < 5; i++) {
- pinMode(ledPin[i], OUTPUT);
- }
- pinMode(pinBuzzer, OUTPUT);
+  Serial.begin(9600);
+  for (int i = 0; i < 5; i++) {
+  pinMode(ledPin[i], OUTPUT);
+  }
+  pinMode(pinBuzzer, OUTPUT);
 }
 
 void loop() {
